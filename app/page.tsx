@@ -26,24 +26,32 @@ export default async function Home() {
         >
           <h3 className="mt-5 font-bold text-4xl">{gate.name}</h3>
 
-          <div className="mt-4">
+          <div>
             {gate.gatestatus === "Active" && (
-              <span className={`rounded font-bold bg-green-700 p-1 px-4 mx-2`}>
+              <span
+                className={`inline-block rounded font-bold bg-green-700 p-1 px-4 mx-2 mt-4`}
+              >
                 Gate: {gate.gatestatus}
               </span>
             )}
             {gate.gatestatus === "Down" && (
-              <span className={`rounded font-bold bg-red-700 p-1 px-4 mx-2`}>
+              <span
+                className={`inline-block rounded font-bold bg-red-700 p-1 px-4 mx-2 mt-4`}
+              >
                 Gate: {gate.gatestatus}
               </span>
             )}
             {gate.armstatus === "Active" && (
-              <span className={`rounded font-bold bg-green-700 p-1 px-4 mx-2`}>
+              <span
+                className={`inline-block rounded font-bold bg-green-700 p-1 px-4 mx-2 mt-4`}
+              >
                 Arm: {gate.armstatus}
               </span>
             )}
             {gate.armstatus === "Down" && (
-              <span className={`rounded font-bold bg-red-700 p-1 px-4 mx-2`}>
+              <span
+                className={`inline-block rounded font-bold bg-red-700 p-1 px-4 mx-2 mt-4`}
+              >
                 Arm: {gate.armstatus}
               </span>
             )}
